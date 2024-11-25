@@ -2,24 +2,32 @@ public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
     {
-        throw new NotImplementedException();
+        if (a % 2 == 0)
+        {
+            Console.WriteLine($"{a} is Even.");
+        } else
+        {
+            Console.WriteLine($"{a} is Odd.");
+        }
     }
 
-    public string GetAInterestingFact(string fact)
-    {
-        throw new NotImplementedException();
-    }
 
     public void SumTwoNumbers()
     {
-        throw new NotImplementedException();
+        int a = 8;
+        double b = 1919;
+        Console.WriteLine(a+b);
     }
 
     public double SumTwoNumbersOfGivenType(double a, double b)
     {
-        throw new NotImplementedException();
+        return a + b;
     }
 
+    public string GetAInterestingFact(string fact)
+    {
+        return fact;
+    }
 
     // Extra challenges
 
@@ -28,7 +36,15 @@ public class Fundament : IFundament
         // TODO: Implement the Fibonacci sequence
         int a = 0;
         int b = 1;
-        int c;
+        int c = a + b;
+        for (int i = 2; i <= 50; i++)
+        {
+            c = a + b;
+            Console.WriteLine(" {0}", c);
+            a = b;
+            b = c;
+        }
+        
 
         /* 
         c = a + b
