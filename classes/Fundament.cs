@@ -33,18 +33,26 @@ public class Fundament : IFundament
 
     public void PrintFibonnaciSeries()
     {
-        // TODO: Implement the Fibonacci sequence
+        // How many fibonacci numbers would you like to check for?
+        int count = 10;
+
+        // Setting the first 2 numbers
         int a = 0;
         int b = 1;
-        int c = a + b;
-        for (int i = 2; i <= 50; i++)
+
+        Console.WriteLine("Here is the fibonacci sequence:");
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+        //going through a for loop, incrementing once every time up to count
+        for (int i = 2; i <= count; i++)
         {
-            c = a + b;
-            Console.WriteLine(" {0}", c);
+            //calculate the next number in the sequence
+            int c = a + b;
+            Console.WriteLine(c);
+            //setting the new value of a and b
             a = b;
             b = c;
         }
-        
 
         /* 
         c = a + b

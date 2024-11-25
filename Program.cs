@@ -13,8 +13,8 @@ class Program
         fundament.CheckOddOrEven(7);
         fundament.SumTwoNumbers();
         Console.WriteLine(fundament.SumTwoNumbersOfGivenType(8, 9));
-        Console.WriteLine(fundament.GetAInterestingFact("test"));
-        Console.WriteLine(fundament.PrintFibonnaciSeries());
+        Console.WriteLine(fundament.GetAInterestingFact("This is an interesting fact!"));
+        fundament.PrintFibonnaciSeries();
         // English greeting
         greetings.SayHello();
         // Japanese greeting
