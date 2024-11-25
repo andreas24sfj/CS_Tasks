@@ -14,8 +14,8 @@ public class Fundament : IFundament
 
     public void SumTwoNumbers()
     {
-        int a = 8;
-        double b = 1919;
+        int a = 9;
+        double b = 100;
         Console.WriteLine(a+b);
     }
 
@@ -31,10 +31,10 @@ public class Fundament : IFundament
 
     // Extra challenges
 
-    public void PrintFibonnaciSeries()
+    public void PrintFibonnaciSeries(int count)
     {
         // How many fibonacci numbers would you like to check for?
-        int count = 10;
+        int n = count;
 
         // Setting the first 2 numbers
         int a = 0;
@@ -44,7 +44,7 @@ public class Fundament : IFundament
         Console.WriteLine(a);
         Console.WriteLine(b);
         //going through a for loop, incrementing once every time up to count
-        for (int i = 2; i <= count; i++)
+        for (int i = 2; i <= n; i++)
         {
             //calculate the next number in the sequence
             int c = a + b;
@@ -86,8 +86,4 @@ public class Fundament : IFundament
         // n! = n*(n-1)*...*1 // for n = 4, 4! = 4 * (4-1)!
         return n * RecursiveFactorial(n - 1);
     }
-
-    
-
-
 }
