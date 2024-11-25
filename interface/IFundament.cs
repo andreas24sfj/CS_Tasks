@@ -24,4 +24,19 @@ public interface IFundament
     /// <param name="fact">a interesting fact</param>
     /// <returns>a fact of type: string</returns>
     string GetAInterestingFact(string fact);
+    
+    /// <summary>
+    /// A method that reverses the given string str
+    /// </summary>
+    /// <param name="str">the string you wish to reverse</param>
+    /// <returns>string str reversed</returns>
+    string ReverseString(string str);
+
+    /// <summary>
+    /// A method to check the factorial of the number n.
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns></returns>
+    int RecursiveFactorial(int n);
 }
+

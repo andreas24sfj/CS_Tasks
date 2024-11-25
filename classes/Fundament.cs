@@ -62,21 +62,32 @@ public class Fundament : IFundament
     }
 
     public string ReverseString(string str)
-    {
+    { 
         // TODO: reverse the given string
-        return "";
+        //converting the string to an array charArray of type char
+        char[] charArray = str.ToArray();
+        //using the array Reverse method on the array to reverse it
+        Array.Reverse(charArray);
+        //making a new string with the reversed array
+        string revStr = new string(charArray);
+        //returning the reversed string
+        return revStr;
     }
 
     public int RecursiveFactorial(int n)
     {
         // Todo: Implement a recursive method(a method that calls itself within its own function scope)
         // To Check the factorial of a number(norsk: Fakultet) we look at n!, where n = n * 1 * 2 * 3...
-        if (n == 0)
+        // 0! & 1! == 1
+        if (n == 0 || n == 1)
         {
             return 1;
         }
-        return n;
+        // n! = n*(n-1)*...*1 // for n = 4, 4! = 4 * (4-1)!
+        return n * RecursiveFactorial(n - 1);
     }
+
+    
 
 
 }

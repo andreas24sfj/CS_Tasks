@@ -15,6 +15,8 @@ class Program
         Console.WriteLine(fundament.SumTwoNumbersOfGivenType(8, 9));
         Console.WriteLine(fundament.GetAInterestingFact("This is an interesting fact!"));
         fundament.PrintFibonnaciSeries();
+        Console.WriteLine(fundament.ReverseString("This is the sentence that is to be reversed."));
+        Console.WriteLine(fundament.RecursiveFactorial(4));
         // English greeting
         greetings.SayHello();
         // Japanese greeting
